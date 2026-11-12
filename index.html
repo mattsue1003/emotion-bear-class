@@ -375,7 +375,7 @@ function stIntro(stage){
    <h1 class="ktitle">熊熊心情教室</h1>
    <p class="ksub">看臉・聽聲音・說出感覺・學冷靜魔法</p>
    <div class="field"><label for="nick">孩子的小名（熊熊會叫他）</label><input id="nick" maxlength="8" value="${S.name}"></div>
-   <button class="kbtn green" id="go">▶ 開始上課</button>
+   <div class="row"><button class="kbtn green" id="go">▶ 開始上課</button><a class="kbtn soft" href="worksheets/emotion-worksheets.pdf" target="_blank" rel="noopener" style="text-decoration:none;font-size:18px;min-height:52px;padding:8px 20px">📄 下載學習單 PDF（4 頁 A4）</a></div>
    <ul class="plan">${STATIONS.slice(1).map((s,i)=>`<li><b>${s.icon}</b><span>${i+1}. ${s.title}<small>${s.min} 分鐘</small></span></li>`).join('')}</ul>
    <p class="narr">全部約 60 分鐘。畫面都是圖和聲音，孩子不用認字；小字是給大人看的。資料只留在這台裝置。</p>`;
   $('#nick',stage).oninput=e=>{S.name=e.target.value.trim()||'小朋友';save('name',S.name)};
@@ -667,10 +667,10 @@ function stBye(stage){
    <div class="cols">
      <div><h3 style="margin:8px 0;color:var(--accent);font-size:16px">今天的紀錄（可複製給家長）</h3>
        <textarea class="summary" id="sum" aria-label="上課紀錄"></textarea>
-       <div class="row" style="justify-content:flex-start;margin-top:8px"><button class="kbtn soft" id="cp" style="font-size:18px;min-height:48px;padding:8px 18px">📋 複製紀錄</button></div></div>
+       <div class="row" style="justify-content:flex-start;margin-top:8px"><button class="kbtn soft" id="cp" style="font-size:18px;min-height:48px;padding:8px 18px">📋 複製紀錄</button><a class="kbtn soft" href="worksheets/emotion-worksheets.pdf" target="_blank" rel="noopener" style="text-decoration:none;font-size:18px;min-height:52px;padding:8px 20px">📄 學習單（第 4 頁帶回家）</a></div></div>
      <div><h3 style="margin:8px 0;color:var(--accent);font-size:16px">回家每天 5 分鐘</h3>
        <ol class="tips">
-        <li><b>睡前心情報到</b>：用這頁第 1 站選一張臉，說說今天什麼時候有這個心情。</li>
+        <li><b>睡前心情報到</b>：用學習單第 4 頁圈心情（或這頁第 1 站），說說今天什麼時候有這個心情。</li>
         <li><b>先幫他說出感覺</b>：哭的時候，先說「積木倒了，你好生氣對不對」，再處理事情。</li>
         <li><b>先冷靜、再說話</b>：一起吹氣球 3 次（鼻子吸、嘴巴慢慢吹）。</li>
         <li><b>教一句話取代哭</b>：「我好生氣，幫幫我」「我要再試一次」。他說出來就馬上回應。</li>

@@ -4,3 +4,5 @@
 全部用熊熊表情圖＋中文語音引導：心情報到、認識六種表情、照鏡子、找找看、發生什麼事、心情有多大、冷靜魔法（吹氣球／抱抱自己／數到五／說出來）、再試一次（積木挫折練習）、說再見＋給家長的紀錄與居家練習。
 
 線上版：https://mattsue1003.github.io/emotion-bear-class/
+
+學習單 PDF（4 頁 A4）：https://mattsue1003.github.io/emotion-bear-class/worksheets/emotion-worksheets.pdf
